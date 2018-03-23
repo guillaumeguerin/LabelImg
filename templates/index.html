@@ -22,8 +22,14 @@
     <main role="main" class="container">
       <h1 class="mt-5">Dataset collection</h1>
       <p class="lead">Hand crafted and free of charge.</p>
-      <p><input type="text" id="search" placeholder="Search"></p>
-      <p><button type="submit" class="btn btn-primary">Download dataset</button>
+	<form class="form-inline">
+	  <div class="form-group mx-sm-3 mb-2">
+	    <label for="image" class="sr-only">Image</label>
+	    <input type="text" class="form-control" id="imagelink" placeholder="Url">
+	  </div>
+	  <button type="submit" class="btn btn-primary mb-2">Label</button>
+	</form>
+      <p><button type="submit" class="btn btn-success">Download dataset</button>
       <a href="/label">or start labeling images</a>.</p>
     </main>
 
