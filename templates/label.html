@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Dataset collection</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename='label.css') }}" rel="stylesheet">
+
+    <script type="text/javascript" src="{{ url_for('static', filename='label.js') }}"></script>
+  </head>
+
+  <body>
+
+	<div id="toolbar">
+	  <button type="button" onclick="removeRectangle()" class="btn btn-default btn-sm">Undo</button>
+
+	<button type="button" onclick="changePicture(-1)" class="btn btn-default btn-sm">Previous</button>
+	  
+	<button type="button" onclick="changePicture(1)" class="btn btn-default btn-sm">Next</button>
+	  
+	</div>
+
+	<div id="center">
+	  <canvas id="canvas" width="600" height="400" style="border:1px solid #000000;">
+	  </canvas>
+	  <aside>
+	  </aside>
+	</div>
+
+
+	<div id="footer">
+	  <div id="images">
+
+	  </div>
+	  Output :
+	  <div id="output">
+
+	  </div>
+	</div>
+
+	<img id="pic1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Inside_the_Batad_rice_terraces.jpg/1920px-Inside_the_Batad_rice_terraces.jpg" alt="landscape">
+	<img id="pic2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Cat_poster_1.jpg/1920px-Cat_poster_1.jpg" alt="cats">
+
+  </body>
+</html>

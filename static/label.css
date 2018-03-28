@@ -1,0 +1,31 @@
+#toolbar {
+  margin: 0.5% 0.5% 0.5% 1.5%;
+}
+#center {
+}
+canvas {
+  float: left;
+  margin: 0 1.5%;
+}
+aside {
+  float: left;
+  width: 25%;
+}
+
+aside > div {
+  margin: 0.5% 0.5% 0.5% 1.5%;
+}
+
+#footer {
+  clear: both;
+  margin: 2.5% 2.5% 2.5% 1.5%;
+}
+
+img {
+  display:none;
+}
+
+#output {
+  border: 8px solid #f7f7f7;
+}
+
